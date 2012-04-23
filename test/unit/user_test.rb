@@ -1,0 +1,44 @@
+require 'test_helper'
+
+class UserTest < ActiveSupport::TestCase
+  # Replace this with your real tests.
+  test "the truth" do
+    assert true
+  end
+end
+
+
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  nom                :string(255)
+#  email              :string(255)
+#  raison_sociale     :string(255)
+#  adresse            :string(255)
+#  code_postal        :string(255)
+#  ville              :string(255)
+#  pays               :string(255)
+#  num_tel_fixe       :string(255)
+#  num_tel_portable   :string(255)
+#  num_fax            :string(255)
+#  num_client_cea     :string(255)
+#  num_client         :string(255)
+#  date_entree        :datetime
+#  site_societe       :string(255)
+#  email_societe      :string(255)
+#  numero_siret       :string(255)
+#  domaine_activite   :string(255)
+#  code_ape           :string(255)
+#  capital_societe    :string(255)
+#  forme_societe      :string(255)
+#  code_siren         :string(255)
+#  code_rcs           :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  salt               :string(255)
+#
+

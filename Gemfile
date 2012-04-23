@@ -17,6 +17,15 @@ gem 'sqlite3'
 # gem 'ruby-debug'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :development do
+  gem 'rspec-rails', '2.5.0'
+  gem 'annotate'
+end
+
+group :test do
+	gem 'factory_girl_rails', '1.0'
+end
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
