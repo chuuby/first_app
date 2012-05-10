@@ -1,0 +1,11 @@
+(document).ready(function(){
+
+    $("#addTask").click(function(){
+        $("#addTask").after("<%= escape_javascript(render :partial => "task", :locals => { :task=> Task.new, :member_id => @member_id }) %>")
+    })
+
+    $(".deleteTask").live("click", function(){
+        $(this).parents(".taskBloc").remove();
+    })
+
+})

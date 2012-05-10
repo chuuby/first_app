@@ -10,9 +10,9 @@ class CreateFactures < ActiveRecord::Migration
       t.string  :regime_tva 
       t.string  :exoneration_tva
       t.string  :numero_avoir
-      t.datetime  :date_emission
+      t.string  :date_emission
       t.string  :devise 
-      t.datetime  :echeance
+      t.string  :echeance
       t.string  :ref_prod_serv
       t.string  :description_prod_serv
       t.string  :quantite
@@ -26,6 +26,7 @@ class CreateFactures < ActiveRecord::Migration
       t.string  :net_a_payer
       t.string  :conditions_reglement
       t.string  :commentaires
+      t.string  :user_id
 
       t.timestamps
     end

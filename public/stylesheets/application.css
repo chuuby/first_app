@@ -1,0 +1,407 @@
+#construction {
+	position:absolute;
+	left:3px;
+	top:3px;
+	background:#333;
+	color:#fff;
+	font-weight:bold;
+	padding:5px;
+}
+/*____SUMMARY______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+.summary {
+
+	position:fixed;
+	top:190px;
+	left:50%;
+	margin-left:320px;
+
+	width:170px;
+	color:#fff;
+
+	 -moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    -moz-opacity:0.9;
+}
+.summary_top, .summary_bottom {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.summary_content {
+
+	position:relative;
+	left:0;
+	top:0;
+	background:#716f6f;
+	margin:-5px 0 0 0;
+	padding:10px;
+	width:100%;
+}
+.summary .selected {
+	color:#ff9823;
+}
+.summary_toggle_display_mode {
+
+	position:relative;
+	left:10px;
+	top:0;
+	width:140px;
+	display:block;
+	margin:30px 0 0 0;
+	cursor:pointer;
+	padding:5px;
+	background:#ff9400;
+	font-weight:bold;
+	text-align:center;
+}
+.summary_toggle_display_mode:hover {
+	text-decoration:underline;
+}
+.summary h1,.summary h2,.summary h3,.summary h4,.summary h5,.summary h6 {
+
+	font-size:9pt;
+	font-weight:normal;
+	padding:0;
+	list-style:list-style-type;
+  	list-style-type:square;
+  	display:list-item;
+  	margin:3px 0 3px 0;
+  	cursor:pointer;
+}
+.summary h1 strong {
+	color:#ff9600;
+}
+.summary h1:hover,.summary h2:hover,.summary h3:hover,.summary h4:hover,.summary h5:hover,.summary h6:hover {
+	text-decoration:underline;
+}
+.summary h1 {
+	margin-left:10px;
+}
+.summary h2 {
+	margin-left:20px;
+}
+.summary h3 {
+	margin-left:30px;
+}
+.summary h4 {
+	margin-left:40px;
+}
+.summary h5 {
+	margin-left:50px;
+}
+.summary h6 {
+	margin-left:60px;
+}
+.summary_container, #normal_container {
+	position:relative;
+	left:0;
+	top:0;
+	width:590px;
+	text-align:justify;
+}
+
+/* */
+.video_container {
+	position:relative;
+	left:0;
+	top:0;
+	margin:0 auto 0 auto;
+	width:720px;
+	height:300px;
+}
+
+/* #### TXT PAGE############################################################################################################################################################################################################################################################################  */
+#txt_page {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:600px;
+	height:580px;
+	padding:30px 20px 20px 20px;
+	margin:30px 0 0 0;
+	background-color:#e6e6e6;
+	background:rgba(255, 255, 255, 0.8);
+	display:inline-block;
+}
+html>body #txt_page {
+	height:auto;
+	min-height:580px;
+}
+#txt_page_title {
+
+	position:absolute;
+	left:0;
+	top:-30px;
+	width:100%;
+}
+#txt_page_title h1 {
+
+	position:absolute;
+	left:20px;
+	top:0;
+	color:#fff;
+	font-size:18pt;
+	font-weight:bold;
+}
+#txt_page_pictures, #txt_page_pictures_wide, #txt_page_pictures_extra_wide {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:120px;
+	margin:10px 0 30px 0;
+}
+.txt_page_picture {
+
+	position:relative;
+	left:0;
+	top:0;
+	float:left;
+	width:160px;
+	height:120px;
+	background:#fff;
+	overflow:hidden;
+	margin:0 10px 0 10px;
+	padding:2px;
+
+
+	-moz-box-shadow: 1px 1px 10px #333;
+	-webkit-box-shadow: 1px 1px 10px #333;
+	box-shadow: 1px 1px 10px #333;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#333333', Direction=135, Strength=12);
+  	zoom: 1;
+}
+#txt_page_pictures_wide .txt_page_picture {
+	margin:0 10px 0 10px;
+
+}
+#txt_page_pictures_extra_wide .txt_page_picture {
+	margin:0 25px 0 25px;
+}
+/* wide page (tools & contact) */
+.content_middle_container_wide #txt_page {
+	width:702px;
+}
+
+/* #### HEADER ############################################################################################################################################################################################################################################################################  */
+#header h1 {
+	font-size:20pt;
+	color:#fff;
+	font-weight:normal;
+}
+#header p {
+	font-size:12pt;
+	/*color:#bab8b5;*/
+	color:#eee;
+	font-weight:normal;
+}
+
+
+/* #### FOOTER ############################################################################################################################################################################################################################################################################  */
+#footer span {
+	padding-left:10px;
+	margin-right:10px;
+	border-left:solid 1px #bebebe;
+}
+#footer .first {
+	border:none;
+}
+#footer a:link, #footer a:visited {
+	color:#bebebe;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+#numero_vert {
+	position:absolute;
+	left:110px;
+	top:49px;
+	height:16px;
+	width:145px;
+	text-align:center;
+	font-size:14pt;
+	font-weight:bold;
+	overflow:hidden;
+	color:#389b3e;
+	/*color:#767676;*/
+
+	z-index:1;
+	padding:0;
+	margin:0;
+	line-height:0.9em;
+}
+
+
+/* #### SLIDER ############################################################################################################################################################################################################################################################################  */
+#slider{
+	position:relative;
+	left:0;
+	top:0;
+	width:720px;
+	height:250px;
+}
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#slider li{
+	width:720px;
+	height:250px;
+	overflow:hidden;
+}
+#prevBtn, #nextBtn{
+	display:block;
+	width:17px;
+	height:66px;
+	position:absolute;
+	left:12px;
+	top:92px;
+}
+#nextBtn{
+	left:716px;
+}
+#prevBtn a, #nextBtn a{
+	display:block;
+	width:17px;
+	height:66px;
+	background:url('pics/btn_slider_previous.jpg') no-repeat 0 0;
+}
+#nextBtn a{
+	background:url('pics/btn_slider_next.jpg') no-repeat 0 0;
+}
+
+
+/*#### TOOLBOX #################################################################################################################################################################################################################################################################################################################################### */
+.toolbox {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:150px;
+	height:200px;
+	float:left;
+	margin:15px 10px 15px 10px;
+	border:solid 1px #ccc;
+	cursor:pointer;
+	box-shadow: 1px 1px 5px #999;
+  	zoom: 1;
+
+ 	-webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+	background:url('pics/document.png') 5px 130px no-repeat;
+}
+.toolbox:hover {
+	border:solid 1px #666;
+}
+
+.toolbox big {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:140px;
+	display:block;
+	font-weight:bold;
+	font-size:9pt;
+	padding:3px 3px 3px 10px;
+	margin:0;
+	background:url('pics/bg_title_toolbox.jpg') left top repeat-y;
+	color:#fff;
+	height:60px;
+}
+html>body .toolbox big {
+	height:auto;
+	min-height:60px;
+}
+.toolbox big img {
+
+	position:absolute;
+	left:-12px;
+	top:3px;
+}
+.toolbox .content {
+	position:relative;
+	left:0;
+	top:0;
+	width:140px;
+	display:block;
+	font-size:8pt;
+	padding:5px;
+	margin:0 auto 0 auto;
+}
+.toolbox .btn_more {
+
+	position:absolute;
+	right:-1px;
+	bottom:-25px;
+	padding:0;
+	margin:0;
+	font-size:8pt;
+	font-weight:bold;
+}
+.toolbox  a:link, .toolbox a:visited, .btn_more a:hover {
+	color:#fff;
+}
+
+/*#### CONTACT ######################################################################################################################################################################################################################################################################################################################################################################## */
+table.contact {
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+
+	padding:10px;
+	border-collapse:collapse;
+}
+
+table.contact tr td {
+	vertical-align:top;
+	padding:5px;
+}
+
+table.contact tr .label {
+	width:30%;
+	text-align:right;
+}
+
+table.contact tr .value {
+	width:70%;
+}
+table.contact tr .value .textbox {
+	width:90%;
+}
+table.contact tr .value .textarea{
+	height:150px;
+}
+
+table.contact tfoot tr td {
+	text-align:right;
+	padding-right:30Px;
+}
+
+#google_map_container {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:250px;
+	height:300px;
+	border:solid 1px #aaa;
+}

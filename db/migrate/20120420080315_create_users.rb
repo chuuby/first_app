@@ -13,7 +13,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :num_fax
       t.string :num_client_cea 
       t.string :num_client
-      t.datetime :date_entree 
+      t.string :date_entree 
       t.string :site_societe 
       t.string :email_societe 
       t.string :numero_siret 

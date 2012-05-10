@@ -6,10 +6,10 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'jquery-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
-
+#gem 'bootstrap-sass'
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -18,7 +18,7 @@ gem 'sqlite3'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec-rails', '2.9.0'
   gem 'annotate'
 end
 

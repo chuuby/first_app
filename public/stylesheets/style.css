@@ -1,0 +1,59 @@
+form {
+	margin:0;
+	padding:0;
+}
+a img {	
+	border: none;
+}
+p {
+	margin:0;
+	padding:0;
+}
+big {
+	margin:0;
+	padding:0;
+}
+
+.unmarged{
+	margin:0;
+	padding:0;
+}
+.centered {
+	
+	position:relative;
+	left:0;
+	top:0;
+	margin: 0 auto 0 auto;
+	text-align:center;
+}
+.relatived {
+	position:relative;
+	left:0;
+	top:0;
+}
+.floatedl {
+	
+	position:relative;
+	left:0;
+	top:0;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.floatedr {
+	
+	position:relative;
+	right:0;
+	top:0;
+	float:right;
+	margin:0;
+	padding:0;
+}
+/* usefull for background image into a div*/
+.img_bg {
+	
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:0;
+}

@@ -1,0 +1,20 @@
+<% title "Facture" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @facture.name %>
+</p>
+
+<ol>
+  <% for champ in @facture.champs %>
+      <li>
+        <%=h champ.decription %>
+      </li>
+  <% end %>
+</ol>
+
+<p>
+  <%= link_to "Edit", edit_facture_path(@facture) %> |
+  <%= link_to "Destroy", @facture, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", factures_path %>
+</p>

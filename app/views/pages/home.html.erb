@@ -1,2 +1,31 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<h1><span style="color: #ff9900;"><strong>&gt;</strong></span>Bienvenue chez Exentys CIE</h1>
+
+
+
+<p>Pour consulter vos factures , chiffres d'affaires ou l'évolution de votre entreprise , 
+veillez vous identifier ou vous inscrire si c'est votre première visite.
+</p>
+
+
+
+
+<h1>Identification</h1>
+
+<%= form_for(:session, :url => sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :email, "eMail" %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password, "Mot de passe" %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit "S'identifier" %>
+  </div>
+<% end %>
+
+<p>Pas encore inscrit ? <%= link_to "S'inscrire !", signup_path %></p>
+
+

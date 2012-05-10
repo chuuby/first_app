@@ -1,0 +1,9 @@
+<% content_for :entete do -%>
+  <%= stylesheet_link_tag "accueil.css" %>
+  <%= javascript_include_tag "mon_script.js" %>
+<% end %>
+<% content_for :titre_page do -%> Liste des utilisateurs <% end %>
+<h1>Liste des utilisateurs</h1>
+<ul class="users">
+  <%= render :partial => 'user/user', :collection => @users %>
+</ul>

@@ -1,0 +1,17 @@
+<h1>Facture</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for facture in @factures %>
+      <tr>
+        <td><%=h facture.num_facture %></td>
+        <td><%= link_to "Show", facture %></td>
+        <td><%= link_to "Edit", edit_facture_path(facture) %></td>
+        <td><%= link_to "Destroy", facture, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "Nouvelle Facture", new_facture_path %></p>

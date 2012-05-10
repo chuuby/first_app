@@ -1,0 +1,338 @@
+#sitemap {
+}
+#sitemap ul li {
+	color:#333;
+}
+#sitemap ul li a:link,#sitemap ul li a:visited, #sitemap ul li a:hover {
+	color:#333;
+}
+
+
+/*_____pagination_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+.pagination {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:690px;
+	display:block;
+	display:inline-block;
+	padding:10px;
+	margin:5px auto 0 auto;
+	border-bottom:solid 1px #aaa;
+}
+.pagination p {
+
+	position:relative;
+	left:0;
+	top:0;
+	display:block;
+	clear:both;
+	width:100%;
+	font-size:8pt;
+	color:#666;
+	padding:5px 0 5px 3px;
+}
+.pagination span {
+
+	position:relative;
+	left:0;
+	top:0;
+	float:left;
+	margin:0 3px 0 3px;
+	padding:0;
+	overflow:hidden;
+	border:solid 1px #aaa;
+
+	 -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	behavior: url('PIE.php');
+}
+.pagination span a:link,.pagination span a:visited, .pagination span a:hover {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:15px;
+	text-align:center;
+	display:block;
+	color:#333;
+	text-decoration:none;
+	margin:0;
+	padding:5px;
+	display:block;
+	font-size:9pt;
+
+ 	-webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+
+}
+.pagination span a:hover {
+	background-color:#f69322;
+}
+
+.pagination span.selected a:link,.pagination span.selected a:visited, span.pagination .selected a:hover {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:15px;
+	text-align:center;
+	display:block;
+	color:#333;
+	text-decoration:none;
+	margin:0;
+	padding:5px;
+	display:block;
+	font-size:9pt;
+	background:#f69322;
+}
+.pagination span.disabled  a:link,.pagination span.disabled a:visited, .pagination span.disabled a:hover {
+
+	background-color:#bbb;
+}
+
+
+.rounded {
+
+	 -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.shadowed {
+
+	-moz-box-shadow: 1px 1px 10px #999;
+	-webkit-box-shadow: 1px 1px 10px #999;
+	box-shadow: 1px 1px 10x #999;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=135, Strength=12);
+  	zoom: 1;
+}
+
+
+/*____Errors notification zone________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+.header_error {
+
+	position:absolute;
+	left:10px;
+	top:0;
+	width:90%;
+	padding:20px;
+	margin:5px auto 5px auto;
+	background:#e00 url('pics/bg_header_error.jpg') left bottom repeat-x;
+	z-index:1000;
+	color:#fff;
+	cursor:pointer;
+	border:solid 5px #333;
+
+ 	-moz-border-radius: 0 5px 5px 5px;
+	-webkit-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+
+	-moz-box-shadow: 1px 1px 10px #999;
+	-webkit-box-shadow: 1px 1px 10px #999;
+	box-shadow: 1px 1px 10x #999;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=135, Strength=12);
+  	zoom: 1;
+
+}
+.header_error .close {
+
+	position:absolute;
+	right:5px;
+	top:1px;
+	cursor:pointer;
+	color:#fff;
+	font-weight:bold;
+	font-size:15pt;
+	font-family: Verdana;
+}
+.header_error big {
+
+	margin:5px 0 5px 0;
+	font-family: Helvetica, 'courier new', courier, monospace, sans-serif;
+	font-size:14pt;
+	font-weight:bold;
+	color:#fff;
+}
+.header_error ul li {
+
+	font-family: Helvetica, 'courier new', courier, monospace, sans-serif;
+	font-size:9pt;
+	color:#fff;
+	margin:0 0 0 15px;
+	padding:0;
+	list-style:circle
+}
+
+/*____table list_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+table.list {
+	position:relative;
+	left:0;
+	top:0;
+	border-collapse: collapse;
+	margin:0;
+	padding:0;
+	border:solid 1px #ccc;
+}
+table.list .thead {
+	background-color:#086fbe;
+	color:#fff;
+}
+table.list .thead td {
+	padding:3px;
+	margin:0;
+}
+
+table.list .tbody {
+}
+table.list .tbody td {
+
+	padding:3px;
+	margin:0;
+	height:25px;
+	overflow:hidden;
+}
+table.list .tbody td div {
+
+	position:relative;
+	left:0;
+	top:0;
+	padding:0;
+	margin:0;
+	height:25px;
+	width:100%;
+	overflow:hidden;
+}
+table.list .tbody td div span {
+	position:absolute;
+	overflow:hidden;
+	height:100%;
+	line-height:2em;
+}
+table.list .tbody .action {
+	cursor:pointer;
+}
+
+table.list tr td a img {
+	border:none;
+}
+
+table.list .tbody0 {
+	background-color:#eee;
+}
+table.list .tbody1 {
+	background-color:#ddf;
+}
+table.list .tbody:hover {
+	background-color:#ccf;
+}
+table.list .tbody td:hover {
+	background-color:#bbf;
+}
+
+/*____table form________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+table.form {
+
+	position:relative;
+	left:0;
+	top:0;
+	background:#e1eced url('pics/bg_table_form.jpg') left bottom repeat-x;
+	padding:10px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	border:solid 1px #aaa;
+}
+table.form tr {
+}
+table.form tr td {
+	padding:3px 5px 3px 5px;
+	vertical-align:top;
+}
+table.form_small tr td {
+	padding:0;
+}
+table.form tr .langs {
+	text-align:left;
+	width:50%;
+}
+table.form tr .save {
+	text-align:right;
+	width:50%;
+}
+table.form tr .label {
+	width:40%;
+	text-align:right;
+}
+table.form tr .field {
+	width:60%;
+	text-align:left;
+}
+table.form tr .field .textbox {
+	width:90%;
+}
+table.form tr .field .textboxl {
+	width:90%;
+}
+table.form tr .error {
+	color:#f00;
+	font-weight:bold;
+	font-size:9pt;
+	text-align:left;
+}
+table.form tr .title {
+	color:#333;
+	font-weight:bold;
+	font-size:16pt;
+	text-align:left;
+}
+table.form tr .separator {
+
+	height:1px;
+	background-color:#aaa;
+	margin:0;
+	padding:0;
+}
+
+.label_help {
+
+	color:#444;
+	background:url('pics/icon_help.png') 0 0 no-repeat;
+	padding-left:20px;
+}
+/*____tooltips______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+#tooltip {
+
+	position: absolute;
+	z-index: 20000;
+	border: none;
+	background-color: #6e8396;
+	color:#fff;
+	padding: 10px;
+
+	opacity: 0.9;
+    	filter : alpha(opacity=90);
+
+	 -moz-border-radius: 0 5px 5px 5px;
+	-webkit-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+
+	-moz-box-shadow: 1px 1px 10px #222;
+	-webkit-box-shadow: 1px 1px 10px #222;
+	box-shadow: 1px 1px 10x #222;
+}
+#tooltip h3, #tooltip div {
+
+	font-weight:normal;
+	margin: 0;
+	font-weight:normal;
+	font-size:12pt;
+	color:#fff;
+}
+

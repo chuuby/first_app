@@ -1,0 +1,273 @@
+/* Page structure description
+
+<container id>
+[rewrited function global_local| global| local]
+(style) change the default container id
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+	[global_local_includes][global_includes][local_includes]
+	[global_local_css_includes][global_css_includes][local_css_includes]
+	[global_local_css_includes][global_css_includes][local_css_includes]
+	[global_local_js_includes][global_js_includes][local_js_includes]
+	[global_open_body][local_open_body] (style_body)
+
+	-> <header> (style_header)
+		-> <header_content> (style_header_content)
+			* [global_header][local_header]
+
+	-> <page>	(style_page)
+		* [global_page][local_page]
+
+		-> <menu> (style_menu)
+			-> <menu_content> (style_menu)
+				* [global_menu][local_menu]
+
+		-> <content_top_before> (style_content_top_before)
+			* [global_content_top_before][local_content_top_before]
+
+		-> <content> (style_content)
+
+			-> <content_top> (style_content_top)
+				* [global_content_top][local_content_top]
+
+			* [global_content][local_content]
+
+			-> <content_left> (style_content_left)
+				-> <content_left_top> (style_content_left_top)
+					* [global_content_left_top][local_content_left_top]
+				-> <content_left_container> (style_content_left_container)
+					* [global_content_left_container][local_content_left_container]
+				-> <content_left_bottom> (style_content_left_bottom)
+					* [global_content_left_bottom][local_content_left_bottom]
+
+			-> <content_middle> (style_content_middle)
+				-> <content_middle_top> (style_content_middle_top)
+					* [global_content_middle_top][local_content_middle_top]
+				-> <content_middle_container> (style_content_middle_container)
+					* [global_content_middle_container][local_content_middle_container]
+				-> <content_middle_bottom> (style_content_middle_bottom)
+					* [global_content_middle_bottom][local_content_middle_bottom]
+
+			-> <content_right> (style_content_right)
+				-> <content_right_top >(style_content_right_top)
+					* [global_content_right_top][local_content_right_top]
+				-> <content_right_container> (style_content_right_container)
+					* [global_content_right_container][local_content_right_container]
+				-> <content_right_bottom> (style_content_right_bottom)
+					* [global_content_right_bottom][local_content_right_bottom]
+
+			-> <content_bottom> (style_content_bottom)
+				* [global_content_bottom][local_content_bottom]
+
+		-> <content_bottom_after> (style_content_bottom_after)
+			* [global_content_bottom_after][local_content_bottom_after]
+
+	-> <footer> (style_footer)
+		-> <footer_content> (style_footer_content)
+			* [global_footer][local_footer]
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ */
+
+html {
+	position:relative;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+
+}
+/* Global main page */
+body {
+
+
+	position:relative;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+
+	font-size: 10pt;
+	font-weight: normal;
+	color: #333;
+	text-align:left;
+	background: #919191 url('pics/bg_body2.jpg') left top repeat-x;
+}
+
+#header {
+
+	position: relative;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:130px;
+	color:#fff;
+}
+#header_content {
+
+	position: relative;
+	top:0;
+	left:0;
+	margin:auto;
+	padding:0;
+	width:980px;
+	height:130px;
+}
+#page {
+
+	position: relative;
+	top: 0;
+	left:-50px;
+	width:880px;
+	margin:5px auto 0 auto;
+	padding:0;
+	text-align:center;
+	z-index:100;
+}
+/* Navigation menu */
+#menu {
+	display:none;
+}
+/* do not enable background color on this part : IE6 gonna bug (of course it is) */
+#menu_content {
+}
+
+/* ____CONTENT_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/* not included into the #content div */
+#content_top_before {
+}
+/* included into the #content div */
+#content_top {
+}
+#content {
+
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding:0;
+	margin:5px auto 0 auto;
+	text-align:left;
+	display:inline-block;
+
+}
+/* included into the #content div */
+#content_bottom {
+	display:none;
+}
+/* not included into the #content div */
+#content_bottom_after {
+}
+
+/*___LEFT PART */
+#content_left {
+
+	position:relative;
+	left:0;
+	top:0;
+	float:left;
+	width:180px;
+	height: 500px;
+}
+html>body #content_left {
+	height:auto;
+	min-height:500px;
+}
+#content_left_top {
+	display:none;
+}
+#content_left_container {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:400px;
+}
+#content_left_bottom {
+	display:none;
+}
+
+/*____MIDDLE PART*/
+#content_middle {
+
+	position: relative;
+	float:right;
+	left: 0;
+	top: 0;
+	width: 690px;
+	margin:0;
+	padding:0;
+}
+#content_middle_top {
+	display:none;
+}
+#content_middle_container {
+
+	position: relative;
+	left:0;
+	top: 0;
+	width:100%;
+	height:400px;
+	margin:0 auto 0 auto;
+	padding:0;
+	text-align:left;
+	z-index:1;
+	display:inline-block;
+}
+
+html>body #content_middle_container {
+	height:auto;
+	min-height:400px;
+}
+#content_middle_bottom {
+
+	display:none;
+}
+
+
+/*___RIGHT PART */
+#content_right {
+	display:none;
+}
+#content_right_top {
+}
+#content_right_container {
+}
+#content_right_bottom {
+}
+
+
+/*____FOOTER_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+#footer {
+
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 200px;
+	padding:0;
+	margin:0;
+}
+
+#footer_content {
+
+	position: relative;
+	top: 0;
+	left:0;
+	width: 100%;
+	height:120px;
+	margin:80px auto 0 auto;
+	padding:0;
+	text-align:left;
+	color:#fff;
+	font-size:10pt;
+	background-color:#696969;
+}

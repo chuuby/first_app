@@ -1,0 +1,21 @@
+ <%= form_for @facture do |f| %>
+    <Form>
+    <p>
+      <%= f.label :num_facture %><br />
+      <%= f.text_field :num_facture %><br />
+      <%= f.label :montant_ht %><br />
+      <%= f.text_field :montant_ht, :onclick =>'calcul()' , :readonly => true %><br />
+      <%= f.label :montant_tva %>
+      <%= f.text_field :montant_tva, :onclick =>'calcul()' , :readonly => true %><br />
+      <%= f.label :montant_ttc %>
+      <%= f.text_field :montant_ttc, :onclick =>'calcul()' , :readonly => true %><br />
+    </p>
+    </Form>
+     <% f.fields_for :champs do |builder| %>
+         <%= render "champ_fields", :f => builder %>
+     <% end %>
+     <p><%= link_to_add_fields "Add Champ", f, :champs %></p>
+     <SCRIPT>document.onclick=calcul</SCRIPT>
+
+    <p><%= f.submit "Submit" %></p>
+<% end %>

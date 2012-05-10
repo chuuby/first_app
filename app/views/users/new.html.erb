@@ -1,2 +1,100 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Inscription</h1>
+
+<%= form_for(@user) do |f| %>
+	<%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+<div class="field">
+    <%= f.label :raison_sociale %><br />
+    <%= f.text_field :raison_sociale %>
+  </div>
+<div class="field">
+    <%= f.label :adresse %><br />
+    <%= f.text_field :adresse %>
+  </div>
+<div class="field">
+    <%= f.label :code_postal %><br />
+    <%= f.text_field :code_postal %>
+  </div>
+<div class="field">
+    <%= f.label :ville %><br />
+    <%= f.text_field :ville %>
+  </div>
+<div class="field">
+    <%= f.label :pays %><br />
+    <%= f.text_field :pays %>
+  </div>
+<div class="field">
+    <%= f.label :num_tel_fixe %><br />
+    <%= f.text_field :num_tel_fixe %>
+  </div>
+<div class="field">
+    <%= f.label :num_tel_portable %><br />
+    <%= f.text_field :num_tel_portable %>
+  </div>
+<div class="field">
+    <%= f.label :num_fax %><br />
+    <%= f.text_field :num_fax %>
+  </div>
+<div class="field">
+    <%= f.label :num_client_cea %><br />
+    <%= f.text_field :num_client_cea %>
+  </div>
+<div class="field">
+    <%= f.label :date_entree %><br />
+    <%= f.text_field :date_entree %>
+  </div>
+<div class="field">
+    <%= f.label :site_societe %><br />
+    <%= f.text_field :site_societe %>
+  </div>
+<div class="field">
+    <%= f.label :email_societe %><br />
+    <%= f.text_field :email_societe %>
+  </div>
+<div class="field">
+    <%= f.label :numero_siret %><br />
+    <%= f.text_field :numero_siret %>
+  </div>
+<div class="field">
+    <%= f.label :domaine_activite %><br />
+    <%= f.text_field :domaine_activite %>
+  </div>
+<div class="field">
+    <%= f.label :code_ape %><br />
+    <%= f.text_field :code_ape %>
+  </div>
+<div class="field">
+    <%= f.label :capital_societe %><br />
+    <%= f.text_field :capital_societe %>
+  </div>
+<div class="field">
+    <%= f.label :forme_societe %><br />
+    <%= f.text_field :forme_societe %>
+  </div>
+<div class="field">
+    <%= f.label :code_siren %><br />
+    <%= f.text_field :code_siren %>
+  </div>
+<div class="field">
+    <%= f.label :code_rcs %><br />
+    <%= f.text_field :code_rcs %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Inscription" %>
+  </div>
+<% end %>

@@ -1,0 +1,110 @@
+#accordion div {
+	display:none;
+}
+#accordion h3 {
+
+	font-size:14.6667px;
+	font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-weight:bold;
+	color:#eee;
+	border-top:solid 1px #fff;
+
+	position:relative;
+	left:0;
+	top:0;
+	display:block;
+	padding:8px 0 8px 28px;
+}
+#accordion h3 a:link, #accordion h3 a:visited, #accordion h3 a:hover {
+	color:#eee;
+	padding:0 0 0 10px;
+}
+#accordion div.empty_div {
+	display:none;
+	height:0;
+}
+
+
+/* #### ACCORDION ############################################################################################################################################################################################################################################################################  */
+#accordion {
+	/*background:#929090 url('pics/bg_menu') left bottom repeat-x;*/
+	background:#929090;
+	box-shadow: 1px 1px 10px #333;
+}
+#accordion img {
+	position:absolute;
+	left:3px;
+	top:5px;
+}
+#accordion .ui-accordion-header {
+	background:none;
+	border:none;
+	border-top:solid 1px #eee;
+	cursor:pointer;
+	padding-left:18px;
+}
+
+#accordion .first {
+	border:none;
+}
+#accordion .ui-accordion-header a:link, #accordion .ui-accordion-header a:visited {
+	color:#eee;
+}
+#accordion .ui-accordion-header a:hover {
+	color:#fff;
+}
+#accordion .ui-accordion-content, #accordion ui-accordion-content-active {
+	background:#767474;
+	padding:0;
+	overflow:hidden;
+	font-size:10pt;
+	border:none;
+
+}
+#accordion .ui-accordion-content p, #accordion .ui-accordion-content-active p {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	padding:0;
+	margin:0;
+	border-bottom:solid 1px #999;
+}
+#accordion .ui-accordion-content a:link, #accordion .ui-accordion-content a:visited, #accordion .ui-accordion-content-active a:link, #accordion .ui-accordion-content-active a:visited {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:145px;
+	display:block;
+	color:#eee;
+	text-decoration:none;
+	padding:5px 3px 5px 30px;
+}
+#accordion .ui-accordion-content a:hover, #accordion .ui-accordion-content-active a:hover {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:145px;
+	display:block;
+	color:#fff;
+	background:#f69322;
+	text-decoration:none;
+	padding:5px 3px 5px 30px;
+}
+#accordion .ui-accordion-content a.selected:link, #accordion .ui-accordion-content a.selected:visited, #accordion .ui-accordion-content a.selected:hover, #accordion .ui-accordion-content-active a.selected:link, #accordion .ui-accordion-content-active a.selected:visited, #accordion .ui-accordion-content-active a.selected:hover {
+
+	position:relative;
+	left:0;
+	top:0;
+	width:145px;
+	display:block;
+	color:#fff;
+	background:#f69322;
+	text-decoration:none;
+	/*padding:5px 3px 5px 30px;*/
+}
+#accordion .ui-accordion-content, #accordion .ui-accordion-content-active { padding: 0; }
+

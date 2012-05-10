@@ -1,0 +1,53 @@
+.btn {
+	
+	padding:5px;
+	margin:0;	
+	background: #f69322 url('pics/bg_btn.jpg') left top repeat-x;
+	color: #fff;
+	font-size: 10pt;
+	font-weight:bold;
+	text-align:center;
+	cursor: pointer;
+	border:none;	
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;	
+	
+}
+
+.textbox {
+	
+	border-top:solid 1px #abadb3;	
+	border-left:solid 1px #abadb3;
+	border-right:solid 1px #c5c7ce;	
+	border-bottom:solid 1px #c5c7ce;	
+	
+	font-family: Helvetica, 'courier new', courier, monospace, sans-serif;
+	background-color:#fff;
+	color:#333;
+	font-size:9pt;
+	margin:0;
+	padding:2px;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius:3px;	
+	
+}
+.textbox_focus {	
+	background-color:#ede8ff;
+}
+
+.selector {
+	
+	border-top:solid 1px #6d88da;	
+	border-left:solid 1px #6d88da;
+	border-right:solid 1px #a2abef;	
+	border-bottom:solid 1px #a2abef;	
+	font-family: Helvetica, 'courier new', courier, monospace, sans-serif;
+	background-color:#fff;
+	padding-left:8px;
+	color:#000;
+	font-size:9pt;	
+}

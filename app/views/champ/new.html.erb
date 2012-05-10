@@ -1,0 +1,28 @@
+<h1></h1>
+<%= form_for(@champ) do |f| %>
+	<%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :prix_unitaire %><br />
+    <%= f.text_field :prix_unitaire %>
+  </div>
+ <div class="field">
+    <%= f.label :ref_prod_serv %><br />
+    <%= f.text_field :ref_prod_serv %>
+  </div>
+ <div class="field">
+    <%= f.label :TVA %><br />
+    <%= f.text_field :TVA %>
+  </div>
+ <div class="field">
+    <%= f.label :quantite %><br />
+    <%= f.text_field :quantite %>
+  </div>
+ <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+ <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+<% end %>

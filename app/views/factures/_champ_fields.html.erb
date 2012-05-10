@@ -1,0 +1,29 @@
+
+<div class="fields">
+  <FORM>
+  <p>
+
+  <%= f.label :description, "Decription" %>
+  <%= f.text_field :description %> </br>
+  <%= f.label :TVA,"TVA (%)" %>
+  <%= f.text_field :TVA  %>  </br>
+  <%= f.label :prix_unitaire,"Prix unitaire" %>
+  <%= f.text_field :prix_unitaire %>  </br>
+  <%= f.label :quantite,"Quantite" %>
+  <%= f.text_field :quantite %>  </br>
+  <%= f.label :montant_ht,"Montant HT" %>
+  <%= f.text_field :montant_ht ,:onclick => 'calcul()' , :readonly => true %>  </br>
+  <%= f.label :montant_tva,"Montant TVA" %>
+  <%= f.text_field :montant_tva ,:onclick => 'calcul()' , :readonly => true %>  </br>
+  <%= f.label :montant_ttc,"Montant TTC" %>
+  <%= f.text_field :montant_ttc ,:onclick => 'calcul()' , :readonly => true %>  </br>
+  <%= f.label :type,"Type" %>
+  <%= f.text_field :type %>  </br>
+  <%= f.label :ref_prod_serv, "Reference produit" %>
+  <%= f.text_field :ref_prod_serv%>  </br>
+
+  <%= link_to_remove_fields "remove", f %><br />
+
+        </p>
+  </FORM>
+ </div>

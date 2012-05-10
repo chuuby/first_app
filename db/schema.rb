@@ -10,7 +10,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120423092320) do
+ActiveRecord::Schema.define(:version => 20120426130219) do
+
+  create_table "champs", :force => true do |t|
+    t.string   "description"
+    t.string   "TVA"
+    t.string   "ref_prod_serv"
+    t.string   "quantite"
+    t.string   "prix_unitaire"
+    t.string   "type"
+    t.string   "montant_ht"
+    t.string   "facture_id"
+    t.string   "montant_tva"
+    t.string   "montant_ttc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "factures", :force => true do |t|
     t.string   "num_facture"
@@ -22,9 +37,9 @@ ActiveRecord::Schema.define(:version => 20120423092320) do
     t.string   "regime_tva"
     t.string   "exoneration_tva"
     t.string   "numero_avoir"
-    t.datetime "date_emission"
+    t.string   "date_emission"
     t.string   "devise"
-    t.datetime "echeance"
+    t.string   "echeance"
     t.string   "ref_prod_serv"
     t.string   "description_prod_serv"
     t.string   "quantite"
@@ -38,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20120423092320) do
     t.string   "net_a_payer"
     t.string   "conditions_reglement"
     t.string   "commentaires"
+    t.string   "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -55,7 +71,7 @@ ActiveRecord::Schema.define(:version => 20120423092320) do
     t.string   "num_fax"
     t.string   "num_client_cea"
     t.string   "num_client"
-    t.datetime "date_entree"
+    t.string   "date_entree"
     t.string   "site_societe"
     t.string   "email_societe"
     t.string   "numero_siret"

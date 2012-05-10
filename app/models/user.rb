@@ -1,11 +1,28 @@
 require 'digest'
 
 class User < ActiveRecord::Base
-  attr_accessor :password
-  attr_accessible :nom, :email,:password, :password_confirmation, :raison_sociale, :adresse, :code_postal,:ville,
-                  :pays, :num_tel_fixe, :num_tel_portable , :num_fax, :num_client_cea, :num_client, :date_entree, 
-                  :site_societe , :email_societe, :numero_siret ,:domaine_activite ,:code_ape,:capital_societe,
-                  :forme_societe ,:code_siren,:code_rcs,
+  has_many        :factures
+  attr_accessor   :password
+  attr_accessible :nom, :email,:password, :password_confirmation, 
+                  :raison_sociale, 
+                  :adresse, 
+                  :code_postal,
+                  :ville,
+                  :pays,
+                  :num_tel_fixe, 
+                  :num_tel_portable , 
+                  :num_fax, 
+                  :num_client_cea,
+                  :date_entree,
+                  :site_societe , 
+                  :email_societe, 
+                  :numero_siret ,
+                  :domaine_activite ,
+                  :code_ape,
+                  :capital_societe,
+                  :forme_societe ,
+                  :code_siren,
+                  :code_rcs,
                   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   date        =/(0[1-9]|[12][0-9]|3[01])+-(0[1-9]|1[012])+-(19|20)\d\d/
@@ -39,14 +56,10 @@ class User < ActiveRecord::Base
                                 :length => { :maximum => 15 },
                                 :format => { :with => /[0-9]/ }            
   
-  validates :num_fax,       :presence => true,
-                            :length => { :maximum => 15},
-                            :format => { :with => /[0-9]/}      
+  validates :num_fax,       :length => { :maximum => 15},
+                            :format => { :with => /^(|[0-9]+)$/}      
   
   validates :num_client_cea, :presence => true,
-                            :length => { :maximum => 10}
-  
-  validates :num_client,     :presence => true,
                             :length => { :maximum => 10}
   
   validates :date_entree,    :presence => true,
@@ -100,7 +113,12 @@ class User < ActiveRecord::Base
          user = find_by_email(email)
          return nil  if user.nil?
          return user if user.has_password?(submitted_password)
-       end
+      end
+      
+      def self.authenticate_with_salt(id, cookie_salt)
+        user = find_by_id(id)
+        (user && user.salt == cookie_salt) ? user : nil
+      end
       
       private
 
